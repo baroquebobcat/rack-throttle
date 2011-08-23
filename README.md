@@ -75,7 +75,7 @@ Examples
 ### Combining various throttling constraints into one overall policy
 
     use Rack::Throttle::Daily,    :max => 1000  # requests
-    use Rack::Throttle::Hourly,   :max => 100   # requests
+    use Rack::Throttle::Minutely,   :max => 100   # requests
     use Rack::Throttle::Hourly,   :max => 60    # requests
     use Rack::Throttle::Interval, :min => 3.0   # seconds
 
